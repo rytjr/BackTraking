@@ -26,9 +26,9 @@ public class MandN4 {
 	public static void dfs(int at, int depth) {
 		if(n2 == depth) {
 			for(int i : arr) {
-				sb.append(i).append(" ");
+				System.out.print(i + " ");
 			}
-			sb.append("\n");
+			System.out.println();
 			return;
 		}
 		
@@ -39,6 +39,18 @@ public class MandN4 {
 				bool[i] = false;
 			}
 		}
+		/*if (depth == M) {
+			for (int val : arr) {
+				System.out.print(val + " ");
+			}
+			System.out.println();
+			return;
+		}
+ 
+		for (int i = at; i <= N; i++) {
+			arr[depth] = i;
+			dfs(i, depth + 1);
+		}*/
 	}
 
 }
